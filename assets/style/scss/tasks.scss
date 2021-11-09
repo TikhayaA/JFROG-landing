@@ -1,0 +1,42 @@
+.tasks{
+    margin-bottom: 150px;
+    &__h2{
+        margin-bottom: 40px;
+    }
+    &__content{
+        margin: 107px 0 110px 134px;
+        width: 43%;
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 81px;
+        align-items: center;
+    }
+    &__item-img{
+        position: relative;
+        margin-right: 34px;
+        min-width: 56px;
+        height: 56px;
+        border: 1px solid #ED1C24;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before{
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 348px;
+            height: 2px;
+            left: -349px;
+            background: linear-gradient(to right, #1C1C1C 30%, rgba(255, 0, 0, 0.5));
+        }
+    }
+    .jfrog-text{
+        margin: 0;
+    }
+}

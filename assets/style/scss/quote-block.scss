@@ -1,0 +1,67 @@
+.quote-block{
+    margin-bottom: 214px;
+    @media screen and (max-width: 1730px){
+        margin-bottom: 120px;
+    }
+    .quote{
+        width: 68.6%;
+        margin-left: 100px;
+        position: relative;
+        padding: 28px 34px 2px 34px;
+        @media screen and (max-width: 1200px){
+            width: 100%;
+            margin: 0;
+        }
+    }
+    img{
+        position: absolute;
+        top: 30px;
+        right: -270px;
+        @media screen and (max-width: 1200px){
+            top: 73px;
+            right: 2px;
+            width: 230px;
+        }
+    }
+}
+.quote-block-left{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 231px;
+    .quote{
+        width: 55.3%;
+        margin-left: 150px;
+        position: relative;
+        @media screen and (max-width: 1200px){
+            width: 100%;
+            margin: 0;
+        }
+        &:after{
+            position: absolute;
+            content: url("../../image/qoute.png");
+            width: 40px;
+            top: 46px;
+            left: -19px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            @media screen and (max-width: 1200px){
+                width: 150px;
+                left: 53%;
+                top: -56px;
+             }
+        }
+    }
+    img{
+        position: absolute;
+        top: -14px;
+        left: -246px;
+        @media screen and (max-width: 1200px){
+           width: 150px;
+           left: 30%;
+           top: -196px;
+        }
+    }
+}

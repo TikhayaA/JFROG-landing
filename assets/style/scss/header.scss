@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+    @media screen and (max-width: 1200px){
+        flex-direction: row-reverse;
+        padding: 45px 0 20px;
+        height: auto;
+    }
+
+    &__resp-btn{
+        width: 33px;
+        height: 18px;
+        display: none;
+        cursor: pointer;
+        @media screen and (max-width: 1200px){
+            display: flex;
+        }
+    }
+    .header__logo{
+        @media screen and (max-width: 1200px){
+            flex-grow: 2;
+            display: flex;
+            justify-content: center;
+            }
+        }
+    &__resp-btn-span{
+        width: 33px;
+        height: 2px;
+        background: #FFFFFF;
+        border-radius: 11px;
+        position: relative;
+        
+        &:after{
+            content: "";
+            position: absolute;
+            width: 19px;
+            height: 2px;
+            background: #FFFFFF;
+            top: 7px;
+            left: 7px;
+            border-radius: 11px;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            width: 19px;
+            height: 2px;
+            background: #FFFFFF;
+            top: 15px;
+            left: 7px;
+            border-radius: 11px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.active-life{
+    h2{
+        margin-bottom: 100px;
+    }
+    &__wrap{
+        
+    }
+    &__wrap-img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

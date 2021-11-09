@@ -1,0 +1,88 @@
+.header-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: 1200px){
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 109px;
+        left: 0;
+        z-index: 99;
+        overflow: auto;
+        height: calc(100% - 109px);
+        background: $bgmain;
+    }
+    &_active{
+        display: flex;
+     }
+    &__wrap-list{
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 1200px){
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            z-index: 2;
+            background: #1C1C1C;
+        }
+    }
+    &__list{
+        margin-left: 48px;
+        color: $colorMenu;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        @media screen and (max-width: 1300px){
+            font-size: 14px;
+            margin-left: 26px;
+        }
+        @media screen and (max-width: 1200px){
+            background: #272727;
+            box-shadow: 0px 4px 43px -9px rgba(0, 0, 0, 0.4);
+            margin: 0;
+            padding: 25px 0;
+            padding-left: 22px;
+            width: 100%;
+            margin-bottom: 2px;
+        }
+        
+    }
+    &__get-in-touch{
+        padding: 15px 0 16px;
+        width: 225px;
+        color: $colorsecondary;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        background: linear-gradient(101.36deg, #292929 -6.72%, rgba(28, 28, 28, 0) 150.52%);
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border: 1px solid $colorsecondary;
+        margin-left: 2px;
+        cursor: pointer;
+        text-align: center;
+        @media screen and (max-width: 1300px){
+            font-size: 14px;
+        }
+        @media screen and (max-width: 1200px){
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        @media screen and (max-width: 767px){
+            padding-left: 0px;
+            width: 88%;
+        }
+    }
+}

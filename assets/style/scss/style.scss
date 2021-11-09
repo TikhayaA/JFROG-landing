@@ -1,0 +1,56 @@
+@import"ui.scss";
+@import"fonts.scss";
+@import"header.scss";
+@import"header-menu.scss";
+@import"selection-stages.scss";
+@import"benefits.scss";
+@import"description.scss";
+@import"jfrog-artifactory";
+@import"team.scss";
+@import"we-use.scss";
+@import"quote.scss";
+@import"quote-block.scss";
+@import"description-content.scss";
+@import"active-life.scss";
+@import"interaction.scss";
+@import"customer.scss";
+@import"tasks.scss";
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background: $bgmain;
+    color: $colormain;
+    position: relative;
+    &.fixed{
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+.line-bg{
+    position: absolute;
+    right: -106px;
+    top: 367px;
+    z-index: 0;
+    @media screen and (max-width: 1730px){
+        width: 116%;
+        top: 280px;
+    }
+    @media screen and (max-width: 1400px){
+        width: 107%;
+        top: 280px;
+        right: -28px;
+    }
+    @media screen and (max-width: 1300px){
+        display: none;
+    }
+}
+.arrow-up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    &_show {
+        display: block;
+    }
+}
+ 

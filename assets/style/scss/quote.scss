@@ -1,0 +1,18 @@
+.quote{
+    padding: 28px 31px 14px 32px;
+    border-radius: 12px;
+    position: relative;
+    background-color: #272727;
+    box-sizing: border-box;
+    @media screen and (max-width: 1730px){
+        padding: 28px 18px 14px 18px;
+    }
+    .jfrog-text{
+        @media screen and (max-width: 1730px){
+            font-size: 16px;
+        }
+        @media screen and (max-width: 1200px){
+            font-size: 14px;
+        }
+    }
+}

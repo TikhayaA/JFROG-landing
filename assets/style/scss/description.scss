@@ -1,0 +1,152 @@
+.description{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 104px 0 204px;
+    position: relative;
+    @media screen and (max-width: 1730px){
+        padding: 65px 0 130px;
+    }
+    @media screen and (max-width: 1200px){
+        flex-direction: column;
+        padding: 0px 0 270px;
+    }
+    @media screen and (max-width: 767px){
+        padding: 60px 0 20px;
+    }
+    @media screen and (max-width: 367px){
+        padding: 20px 0 20px;
+    }
+    &__logo{
+        width: 43%;
+        @media screen and (max-width: 1200px){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 767px){
+            margin-bottom: 50px;
+        }
+    }
+    &__logo-img{
+        width: 163px;
+        img{
+            width: 100%;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            order: 3;
+            margin-top: 50px;
+        }
+        @media screen and (max-width: 767px){
+            width: 23%;
+        }
+    }
+    &__logo-title{
+        margin: 48px 0 20px;
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            order: 1;
+        }
+        @media screen and (max-width: 767px){
+            font-size: 38px;
+        }
+        @media screen and (max-width: 367px){
+            font-size: 30px;
+            margin: 20px 0 20px;
+        }
+        br{
+            @media screen and (min-width: 768px) and (max-width: 1200px){
+                display: none;
+            }
+        }
+    }
+    &__logo-description{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            order: 2;
+        }
+        @media screen and (max-width: 767px){
+            font-size: 14px;
+        }
+        span{
+            color: #41BF47;
+        }
+    }
+    &__content{
+        width: 54%;
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-end;
+        margin-bottom: 10px;
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            width: 70%;
+            position: absolute;
+            right: -220px;
+            top: 150px;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 767px){
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+    &__quote{
+        width: 50.6%;
+        &:after{
+            position: absolute;
+            content: url("../../image/qoute.png");
+            width: 40px;
+            height: 45px;
+            top: 141px;
+            right: -33px;
+            @media screen and (min-width: 768px) and (max-width: 1200px){
+                top: 225px;
+                left: -13px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+            }
+            @media screen and (max-width: 767px){
+                right: 68%;
+                bottom: -24px;
+                top: auto;
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                }
+            }
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
+    }
+    .jfrog-text{
+        margin-bottom: 20px;
+    }
+    &__developer{
+        position: relative;
+        width: 40%;
+        img{
+            left: 0;
+            position: relative;
+            bottom: -38px;
+            @media screen and (min-width: 768px) and (max-width: 1200px){
+                top: -130px;
+                left: -235px;
+                width: 180px;
+                transform: scale(-1, 1);
+            }
+            @media screen and (max-width: 767px){
+                width: 93%;
+            }
+        }
+        @media screen and (max-width: 767px){
+            align-self: center;
+        }
+    }
+}
