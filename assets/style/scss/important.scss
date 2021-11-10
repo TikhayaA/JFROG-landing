@@ -1,0 +1,116 @@
+.important{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 180px 0 130px;
+    @media screen and (max-width: 1300px){
+        flex-direction: column;
+    }
+    @media screen and (max-width: 500px){
+        padding: 50px 0 150px;
+    }
+    &__h2{
+        margin-bottom: 66px;
+        
+        @media screen and (max-width: 767px){
+            margin-bottom: 30px;
+        }
+    }
+    &__quote-wrap{
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        @media screen and (max-width: 1300px){
+            width: 100%;
+        }
+    }
+    .quote-block__item{
+        width: 409px;
+        &:after{
+            position: absolute;
+            content: url("../../image/qoute.png");
+            width: 40px;
+            top:168px;
+            left: -19px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            @media screen and (max-width: 1300px){
+                width: 30px;
+                left: 74%;
+                bottom: -36px;
+                transform: rotate(-120deg);
+                -webkit-transform: rotate(-120deg);
+                -moz-transform: rotate(-120deg);
+                -ms-transform: rotate(-120deg);
+                -o-transform: rotate(-120deg);
+                }
+        }
+        @media screen and (max-width: 1300px){
+            width: 100%;
+        }
+        
+    }
+    .quote-block__developer{
+        position: absolute;
+        top: 117px;
+        left: -206px;
+        @media screen and (max-width: 1300px){
+            top: 267px;
+            left: 25%;
+        }
+        @media screen and (max-width: 500px){
+            top: 307px;
+            width: 93px;
+        }
+    }
+    &__content{
+        width: 46%;
+        position: relative;
+        top: -27px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @media screen and (max-width: 1700px){
+            width: 50%;
+        }
+        @media screen and (max-width: 1300px){
+            width: 100%;
+            top: 500px;
+            padding-bottom: 370px;
+        }
+        @media screen and (max-width: 767px){
+            top: 330px;
+            padding-bottom: 170px;
+        }
+        @media screen and (max-width: 500px){
+            top: 280px;
+        }
+    }
+    &__content-block{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .tasks__item{
+        width: 75%;
+        align-items: center;
+        margin-bottom: 45px;
+        @media screen and (max-width: 1700px){
+            width: 83%;
+        }
+        .jfrog-text{
+            margin: 0;
+        }
+    }
+    .tasks__item-img:before {
+        width: 250px;
+        left: -250px;
+        @media screen and (max-width: 1700px){
+            width: 150px;
+            left: -150px;
+        }
+    }
+}

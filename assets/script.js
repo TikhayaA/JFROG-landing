@@ -9,6 +9,7 @@ headerRespBtn[0].addEventListener('click', () => {
 );
 
 let goTopBtn = document.querySelector('.arrow-up');
+let form = document.getElementsByClassName('form');
 
 function backToTop() {
     if (window.pageYOffset > 0) {
@@ -23,5 +24,23 @@ window.addEventListener('scroll', () => {
     } else {
         goTopBtn.classList.remove('arrow-up_show');
     }
+    if (window.innerWidth < 767) {
+        if (window.pageYOffset > form[0].offsetTop - 360) {
+            goTopBtn.classList.add('arrow-up_mobile');
+        } else {
+            goTopBtn.classList.remove('arrow-up_mobile');
+        }
+    }
 });
 goTopBtn.addEventListener('click', backToTop);
+
+let checkAgree = document.getElementById('agree');
+let formBtn = document.getElementById('submit-form');
+
+checkAgree.addEventListener('click', () => {
+    if (checkAgree.checked !== true) {
+        formBtn.disabled = true;
+    } else {
+        formBtn.disabled = false;
+    }
+});

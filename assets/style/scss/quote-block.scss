@@ -1,7 +1,11 @@
 .quote-block{
-    margin-bottom: 214px;
+    margin-bottom: 192px;
+    position: relative;
     @media screen and (max-width: 1730px){
         margin-bottom: 120px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1400px){
+        margin-bottom: 74px;
     }
     .quote{
         width: 68.6%;
@@ -12,8 +16,11 @@
             width: 100%;
             margin: 0;
         }
+        @media screen and (max-width: 500px){
+            padding: 14px 12px 5px 12px;
+        }
     }
-    img{
+    &__developer{
         position: absolute;
         top: 30px;
         right: -270px;
@@ -22,12 +29,22 @@
             right: 2px;
             width: 230px;
         }
+        @media screen and (max-width: 767px){
+            top: 148px;
+            width: 133px;
+            right: -20px;
+        }
+        @media screen and (max-width: 335px){
+            top: 182px;
+        }
     }
+    
 }
 .quote-block-left{
     display: flex;
     justify-content: center;
     margin-bottom: 231px;
+    position: relative;
     .quote{
         width: 55.3%;
         margin-left: 150px;
@@ -35,6 +52,9 @@
         @media screen and (max-width: 1200px){
             width: 100%;
             margin: 0;
+        }
+        @media screen and (max-width: 500px){
+            padding: 14px 12px 5px 12px;
         }
         &:after{
             position: absolute;
@@ -48,20 +68,31 @@
             -ms-transform: rotate(-45deg);
             -o-transform: rotate(-45deg);
             @media screen and (max-width: 1200px){
-                width: 150px;
-                left: 53%;
-                top: -56px;
-             }
+                height: 40px;
+                width: 30px;
+                left: 33%;
+                top: 81%;
+                transform: rotate(-120deg);
+                -webkit-transform: rotate(-120deg);
+                -moz-transform: rotate(-120deg);
+                -ms-transform: rotate(-120deg);
+                -o-transform: rotate(-120deg);
+            }
         }
     }
-    img{
+    .quote-block__developer{
         position: absolute;
         top: -14px;
         left: -246px;
         @media screen and (max-width: 1200px){
            width: 150px;
-           left: 30%;
-           top: -196px;
+           left: -15px;
+           top: 150px;
+        }
+        @media screen and (max-width: 767px){
+            top: 150px;
+            width: 93px;
+            left: -15px;
         }
     }
 }

@@ -49,7 +49,7 @@
         @media screen and (max-width: 767px){
             font-size: 38px;
         }
-        @media screen and (max-width: 367px){
+        @media screen and (max-width: 500px){
             font-size: 30px;
             margin: 20px 0 20px;
         }
@@ -81,9 +81,9 @@
         align-self: flex-end;
         margin-bottom: 10px;
         @media screen and (min-width: 768px) and (max-width: 1200px){
-            width: 70%;
+            width: 40%;
             position: absolute;
-            right: -220px;
+            right: 13px;
             top: 150px;
             flex-direction: column;
         }
@@ -94,6 +94,9 @@
     }
     &__quote{
         width: 50.6%;
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            width: 100%;
+        }
         &:after{
             position: absolute;
             content: url("../../image/qoute.png");
@@ -132,9 +135,9 @@
         position: relative;
         width: 40%;
         img{
-            left: 0;
+            left: -7px;
             position: relative;
-            bottom: -38px;
+            bottom: -81px;
             @media screen and (min-width: 768px) and (max-width: 1200px){
                 top: -130px;
                 left: -235px;
@@ -143,6 +146,10 @@
             }
             @media screen and (max-width: 767px){
                 width: 93%;
+            }
+            @media screen and (max-width: 400px){
+                width: 121px;
+                bottom: -31px;
             }
         }
         @media screen and (max-width: 767px){

@@ -1,12 +1,23 @@
 .team{
     padding-bottom: 200px;
     @media screen and (max-width: 1730px){
+        padding-bottom: 130px;
+    }
+    @media screen and (max-width: 1400px){
         padding-bottom: 90px;
     }
     &__h2{
         margin-bottom: 82px;
         position: relative;
         @media screen and (max-width: 1200px){
+            margin: 0 auto 50px;
+            width: 60%;
+            text-align: center;
+        }
+        @media screen and (max-width: 500px){
+            margin: 0 auto 30px;
+            width: 92%;
+            text-align: left;
         }
         &:after{
             position: absolute;
@@ -33,6 +44,7 @@
     &__wrap{
         display: flex;
         justify-content: space-between;
+        position: relative;
         @media screen and (max-width: 1200px){
             flex-direction: column;
             width: 33%;
@@ -59,13 +71,11 @@
             font-size: 18px;
         }
         @media screen and (max-width: 1200px){
-            margin-bottom: 30px;
             text-align: center;
             font-size: 14px;
             padding: 9px 30px;
-        }
-        @media screen and (max-width: 767px){
             margin-bottom: 20px;
+            border: 1px solid rgba(237, 28, 36, 0.5);
         }
         &:after{
             position: absolute;
@@ -79,9 +89,12 @@
                 width: 59px;
                 left: -61px;
             }
-            @media screen and (max-width: 767px){
+            @media screen and (max-width: 1300px){
                 width: 20px;
                 left: -20px;
+            }
+            @media screen and (max-width: 1200px){
+                content: none;
             }
         }
         &:nth-child(1){
@@ -90,7 +103,21 @@
                 @media screen and (max-width: 1200px){
                     content: "";
                 }
+                @media screen and (max-width: 1200px){
+                    content: none;
+                }
             }
+        }
+    }
+    &__line{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        left: -89px;
+        top: 3px;
+        @media screen and (max-width: 1200px){
+            display: block;
         }
     }
 }

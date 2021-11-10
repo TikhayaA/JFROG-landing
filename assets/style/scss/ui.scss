@@ -36,6 +36,9 @@ h3{
 }
 .title-img{
     position: relative;
+    @media screen and (max-width: 767px){
+        margin-left: 10px;
+    }
     &:after{
         position: absolute;
         content: url("../../svg/pattern.svg");
@@ -45,6 +48,10 @@ h3{
         top: 0px;
         @media screen and (max-width: 1400px){
             left: -84px;
+        }
+        @media screen and (max-width: 1200px){
+            content: url("../../svg/pattern-resp.svg");
+            left: -39px;
         }
     }
 }
@@ -61,6 +68,10 @@ h3{
     @media screen and (max-width: 1300px){
         font-size: 14px;
     }
+    @media screen and (max-width: 350px){
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
 }
 .container{
     max-width: 1540px;
@@ -75,10 +86,32 @@ h3{
         width: 700px;
     }
     @media screen and (max-width: 768px){
-        width: calc(100% - 50px);
+        width: calc(100% - 70px);
     }
     @media screen and (max-width: 350px){
-        width: 97%;
+        width: calc(100% - 60px);
+    }
+}
+.btn {
+    text-transform: capitalize;
+    border-radius: 2px;
+    background: linear-gradient(100.91deg, #292929 -88.55%, rgba(28, 28, 28, 0) 149.18%), #1C1C1C;
+    color: #FF0000;
+    border: 1px solid #FF0000;
+    &:disabled {
+        background: linear-gradient(100.91deg, #292929 -88.55%, rgba(28, 28, 28, 0) 149.18%), #1C1C1C;
+        border: 1px solid #525252;
+        box-sizing: border-box;
+        color: #525252;
+    }
+    &:hover {
+        background: linear-gradient(100.91deg, #4F4F4F -88.55%, rgba(28, 28, 28, 0) 149.18%), #1C1C1C;
+        color: #FF0000;
+        border: 1px solid #FF0000;
+    }
+    &:active {
+        background: linear-gradient(100.91deg, #530000 -88.55%, rgba(28, 28, 28, 0) 149.18%), #1C1C1C;
+        color: #FF0000;
     }
 }
 $bgmain: #1C1C1C;

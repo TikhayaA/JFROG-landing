@@ -1,9 +1,13 @@
 .interaction{
     margin-bottom: 200px;
+    @media screen and (max-width: 1400px){
+        margin-bottom: 100px; 
+    }
     &__h2{
       margin-bottom: 112px; 
         @media screen and (max-width: 767px){
             width: 90%;
+            margin-bottom: 30px; 
         }
     }
     &__wrap{
@@ -12,18 +16,46 @@
         @media screen and (max-width: 1730px){
             justify-content: space-between;
         }
+        @media screen and (max-width: 1200px){
+            justify-content: center;
+        }
     }
     &__head{
         position: relative;
         width: 19%;
-        @media screen and (max-width: 767px){
-            display: none;
+        @media screen and (max-width: 1200px){
+           min-width: 160px;
+           margin: -16px 20px 0 0;
+        }
+        @media screen and (max-width: 450px){
+            min-width: 80px;
+            margin: 85px 64px 0 0;
+         }
+         @media screen and (max-width: 350px){
+            margin: 61px 40px 0 0;
+        }
+    }
+    &__head-img{
+        @media screen and (max-width: 1200px){
+            width: 150px;
+        }
+        @media screen and (max-width: 450px){
+            width: 80px;
         }
     }
     &__list{
         width: 30%;
         @media screen and (max-width: 1730px){
             width: 43%;
+        }
+        @media screen and (max-width: 1300px){
+            width: 36%;
+        }
+        @media screen and (max-width: 1200px){
+            min-width: 270px;
+        }
+        @media screen and (max-width: 450px){
+            min-width: 185px;
         }
     }
     &__list-item{
@@ -34,6 +66,12 @@
         align-items: center;
         @media screen and (max-width: 1730px){
             margin-bottom: 55px;
+        }
+        @media screen and (max-width: 1300px){
+            margin-bottom: 61px;
+        }
+        @media screen and (max-width: 1200px){
+            margin-bottom: 35px;
         }
     }
     &__list-icon{
@@ -49,10 +87,13 @@
         -o-border-radius: 50%;
         background: #F1F1F1;
         flex-shrink: 0;
-        @media screen and (max-width: 767px){
+        @media screen and (max-width: 1200px){
             margin-right: 20px;
             width: 10px;
             height: 10px;
+        }
+        @media screen and (max-width: 350px){
+            margin-right: 10px;
         }
         &:before{
             position: absolute;
@@ -73,12 +114,11 @@
             -moz-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%);
-            @media screen and (max-width: 767px){
+            @media screen and (max-width: 1200px){
                 margin-right: 20px;
                 width: 6px;
                 height: 6px;
             }
-            
         }
     }
     &__head-line{
@@ -90,5 +130,29 @@
             right: -440px;
             width: 495px;
         }
+        @media screen and (max-width: 1200px){
+            display: none;
+        }
+    }
+    &__head-line-resp{
+        display: none;
+            @media screen and (max-width: 1200px){
+                display: block;
+                position: absolute;
+                top: 28px;
+                z-index: 3;
+                width: 55px;
+                right: -22px;
+            }
+            @media screen and (max-width: 450px){
+                top: -51px;
+                width: 69px;
+                right: -57px;
+            }
+            @media screen and (max-width: 350px){
+                top: -27px;
+                width: 56px;
+                right: -34px;
+            }
     }
 }

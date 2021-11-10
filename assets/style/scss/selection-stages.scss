@@ -11,7 +11,18 @@
             width: 25%;
         }
         @media screen and (max-width: 767px){
-            width: 100%;
+            width: 80%;
+            align-items: flex-start;
+            
+        }
+        @media screen and (min-width: 500px) and (max-width: 767px){
+            margin: auto;
+        }
+        @media screen and (max-width: 500px){
+            margin-left: 35px;
+        }
+        @media screen and (max-width: 350px){
+            margin-left: 17px;
         }
     }
     &__wrap{
@@ -20,6 +31,11 @@
         position: relative;
         @media screen and (max-width: 767px){
             flex-direction: column;
+            width: 350px;
+            margin: auto;
+        }
+        @media screen and (max-width: 350px){
+            width: 300px;
         }
         >:last-child{
             width: 15%;
@@ -27,7 +43,7 @@
                 width: 17%;
             }
             @media screen and (max-width: 767px){
-                width: 100%;
+                width: 80%;
             }
         }
     }
@@ -38,6 +54,10 @@
         line-height: 150%;
         color: #FFFFFF;
         margin-left: 17px;
+        @media screen and (max-width: 767px){
+            margin-left: 11px;
+            font-size: 12px;
+        }
     }
     &__step-icon{
         background-image: url("../../svg/pattern.svg");
@@ -47,14 +67,43 @@
         height: 33px;
         position: relative;
         z-index: 2;
+        @media screen and (max-width: 767px){
+            background-image: none;
+            margin: 7px 0 13px;
+            width: 29px;
+        }
     }
     &__line-img{
         position: absolute;
         top: 53px;
         left: 156px;
-        img{
+        .line{
             @media screen and (max-width: 1730px){
                 width: 89%;
+            }
+            @media screen and (max-width: 767px){
+                display: none;
+            }
+        }
+        @media screen and (max-width: 767px){
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        
+        .line-resp{
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 17px;
+            width: 290px;
+            @media screen and (max-width: 767px){
+                display: block;
+            }
+            @media screen and (max-width: 350px){
+                top: 35px;
+                left: -1px;
+                width: 282px;
             }
         }
     }
@@ -62,6 +111,9 @@
         text-align: center;
         @media screen and (max-width: 1200px){
             font-size: 13px;
+        }
+        @media screen and (max-width: 767px){
+            text-align: left;
         }
     }
 }

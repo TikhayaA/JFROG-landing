@@ -1,9 +1,10 @@
 .customer{
     padding: 70px 0 101px;
-    margin-bottom: 150px;
+    margin-bottom: 93px;
     background: #272727;
-    &__wrap{
-
+    @media screen and (max-width: 600px){
+        margin-bottom: 50px;
+        padding: 70px 0 50px;
     }
     &__wrap-p{
         font-style: normal;
@@ -22,14 +23,43 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media screen and (max-width: 1200px){
+            margin: 71px 0 66px;
+        }
+        @media screen and (max-width: 600px){
+            margin: 32px 0 32px;
+        }
     }
     &__item{
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         width: 20%;
+        display: flex;
+        align-items: center;
         @media screen and (max-width: 1200px){
-            width: 30%;
+            width: 17%;
         }
-        svg{
+        @media screen and (max-width: 600px){
+            width: 33.3%;
+            justify-content: center;
+        }
+        img{
+            height: auto;
+            max-width: 100%;
+            opacity: 0.3;
+            @media screen and (max-width: 1200px){
+                width: 70%;
+            }
+        }
+    }
+    .customer__item .customer__item-img-small{
+        @media screen and (max-width: 1200px){
+            width: 23%;
+        }
+    }
+    &__item-last-row{
+        width: 16%;
+        @media screen and (max-width: 600px){
+            width: 30%;
         }
     }
 

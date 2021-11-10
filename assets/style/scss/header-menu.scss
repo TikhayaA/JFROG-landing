@@ -3,31 +3,47 @@
     justify-content: flex-end;
     align-items: center;
     @media screen and (max-width: 1200px){
-        display: none;
         flex-direction: column;
         position: absolute;
-        width: 100%;
+        width: 40%;
         top: 109px;
-        left: 0;
+        left: -100%;
         z-index: 99;
         overflow: auto;
         height: calc(100% - 109px);
         background: $bgmain;
-    }
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.6s;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -ms-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        }
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
     &_active{
-        display: flex;
-     }
+        opacity: 1;
+        pointer-events: all;
+        left: 0;
+        transition: all 0.6s;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -ms-transition: all 0.6s;
+        -o-transition: all 0.6s;
+}
     &__wrap-list{
         display: flex;
         align-items: center;
-        @media screen and (max-width: 1200px){
-            height: 100%;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 100%;
-            z-index: 2;
-            background: #1C1C1C;
-        }
+            @media screen and (max-width: 1200px){
+                height: 100%;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 100%;
+                z-index: 2;
+                background: #1C1C1C;
+            }
     }
     &__list{
         margin-left: 48px;
@@ -38,6 +54,11 @@
         line-height: 20px;
         text-transform: uppercase;
         box-sizing: border-box;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
         @media screen and (max-width: 1300px){
             font-size: 14px;
             margin-left: 26px;
@@ -50,6 +71,9 @@
             padding-left: 22px;
             width: 100%;
             margin-bottom: 2px;
+        }
+        :hover{
+            color: $colorsecondary;
         }
         
     }
@@ -76,13 +100,12 @@
             font-size: 14px;
         }
         @media screen and (max-width: 1200px){
-            width: 100%;
+            width: 88%;
             box-sizing: border-box;
             text-align: center;
         }
         @media screen and (max-width: 767px){
             padding-left: 0px;
-            width: 88%;
         }
     }
 }

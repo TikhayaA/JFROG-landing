@@ -15,6 +15,8 @@
 @import"interaction.scss";
 @import"customer.scss";
 @import"tasks.scss";
+@import"important.scss";
+@import"form.scss";
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -31,6 +33,7 @@ body{
     right: -106px;
     top: 367px;
     z-index: 0;
+    pointer-events: none;
     @media screen and (max-width: 1730px){
         width: 116%;
         top: 280px;
@@ -44,13 +47,199 @@ body{
         display: none;
     }
 }
+.line-bg-resp{
+    position: absolute;
+    left: -25px;
+    top: 91%;
+    z-index: 0;
+    pointer-events: none;
+    display: none;
+    @media screen and (max-width: 380px){
+        display: block;
+    }
+    @media screen and (max-width: 350px){
+       width: 305px;
+       top: 92%;
+    }
+    @media screen and (max-width: 330px){
+        width: 305px;
+        top: 97%;
+     }
+}
 .arrow-up {
     position: fixed;
     right: 20px;
     bottom: 20px;
     display: none;
+    @media screen and (max-width: 1200px){
+        width: 50px;
+    }
     &_show {
         display: block;
+    }
+    &_mobile {
+        bottom: 743px;
+        position: absolute;
+        z-index: 1;
+        right: 5px;
+    }
+}  
+
+.pos-icon-1{
+    right: -8%;
+    top: 46.5%;
+        @media screen and (max-width: 1730px){
+            right: -12%;
+        }
+        @media screen and (max-width: 1200px){
+            top: 73.5%;
+            right: 13%;
+        }
+        @media screen and (max-width: 767px){
+            top: 96.5%;
+            right: 3%;
+        }
+}
+.pos-icon-2{
+    right: -12%;
+    top: 73.6%;
+    @media screen and (max-width: 1900px){
+        right: -5%;
+        width: 190px;
+    }
+    @media screen and (max-width: 1730px){
+        right: -11%;
+    }
+    @media screen and (max-width: 1200px){
+        top: 87.6%;
+        right: -1%;
+    }
+    @media screen and (max-width: 767px){
+        top: 109.6%;
+        right: 1%;
+    }
+    @media screen and (max-width: 350px){
+        right: 0%;
+    }
+}
+.pos-icon-3{
+    right: 4%;
+    top: 89%;
+    width: 245px;
+    @media screen and (max-width: 1700px){
+        right: -2%;
+    }
+    @media screen and (max-width: 1200px){
+        top: 101%;
+        right: 14%;
+    }
+    @media screen and (max-width: 767px){
+        top: 121%;
+        right: 19%;
+    }
+}
+.pos-icon-4{
+    right: -8%;
+    top: 60%;
+    @media screen and (max-width: 1730px){
+        width: 140px;
+        right: -12%;
+    }
+    @media screen and (max-width: 1440px){
+        width: 90px;
+        right: -5%;
+    }
+    @media screen and (max-width: 1200px){
+     display: none;
+    }
+}
+.pos-icon-5{
+    right: -12%;
+    top: 130%;
+    @media screen and (max-width: 1730px){
+        right: -12%;
+        top: 152%;
+        width: 140px;
+    }
+    @media screen and (max-width: 1440px){
+        width: 90px;
+        right: -5%;
+    }
+    @media screen and (max-width: 1200px){
+        top: 157%;
+        right: -4%;
+    }
+    @media screen and (max-width: 1200px){
+        right: 29%;
+    }
+}
+.pos-icon-6{
+    right: -2%;
+    top: 195%;
+    @media screen and (max-width: 1730px){
+        width: 160px;
+        top: 204%;
+        width: 120px;
+    }
+    @media screen and (max-width: 1440px){
+        width: 90px;
+        right: 7%;
+    }
+    @media screen and (max-width: 1200px){
+        right: 3%;
+        top: 204%;
+    }
+}
+.pos-icon-7{
+    left: -2%;
+    top: 25%;
+    @media screen and (max-width: 1730px){
+        left: -9%;
+        top: 89%;
+        width: 120px;
+    }
+    @media screen and (max-width: 1200px){
+        left: 4%;
+        top: 299%;
+    }
+}
+.pos-icon-8{
+    left: -13%;
+    top: -16%;
+    @media screen and (max-width: 1730px){
+        left: -13%;
+        top: -51%;
+        width: 120px;
+    }
+    @media screen and (max-width: 1200px){
+        right: 3%;
+        top: 271%;
+    }
+}
+.pos-icon-9{
+    left: -9%;
+    top: 102%;
+    @media screen and (max-width: 1730px){
+        left: -6%;
+        top: -4%;
+        width: 120px;
+    }
+    @media screen and (max-width: 1200px){
+        left: -21%;
+        top: 181%;
+    }
+    @media screen and (max-width: 1200px){
+        
+    }
+}
+.pos-icon{
+    position: absolute;
+    z-index: -1;
+    @media screen and (max-width: 1730px){
+        width: 170px;
+    }
+    @media screen and (max-width: 1200px){
+        width: 117px;
     }
 }
  

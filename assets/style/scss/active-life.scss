@@ -1,9 +1,69 @@
 .active-life{
-    h2{
+    &__h2{
         margin-bottom: 100px;
+        @media screen and (max-width: 650px){
+            margin-bottom: 30px;
+        }
     }
-    &__wrap{
-        
+    &__bg{
+        background-image: url('../../image/active-life.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @media screen and (max-width: 650px){
+            background-image: url('../../image/active-life-resp.png');
+        }
+    }
+    &__content-wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 240px 0 533px;
+        @media screen and (max-width: 650px){
+            padding: 240px 0 100px;
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        margin-bottom: 170px;
+        @media screen and (max-width: 1200px){
+            width: 49%;
+            justify-content: space-between;
+            margin-bottom: 100px;
+        }
+        @media screen and (max-width: 650px){
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    &__item-img{
+        margin-bottom: 56px;
+        @media screen and (max-width: 1200px){
+            width: 50px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .jfrog-text{
+        width: 80%;
+        font-size: 24px;
+        text-align: center;
+        @media screen and (max-width: 1200px){
+            width: 100%;
+            font-size: 14px;
+        }
+        @media screen and (max-width: 650px){
+            width: 70%;
+        }
+        @media screen and (max-width: 450px){
+            width: 90%;
+        }
     }
     &__wrap-img{
         display: flex;

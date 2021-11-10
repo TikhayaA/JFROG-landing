@@ -1,16 +1,29 @@
 .tasks{
     margin-bottom: 150px;
+    @media screen and (max-width: 1200px){
+        margin-bottom: 50px;
+    }
     &__h2{
         margin-bottom: 40px;
+        @media screen and (max-width: 1200px){
+            margin-bottom: 30px;
+        }
     }
     &__content{
         margin: 107px 0 110px 134px;
         width: 43%;
+        @media screen and (max-width: 1200px){
+            margin: 40px 0 40px 22px;
+            width: 90%;
+        }
     }
     &__item{
         display: flex;
         margin-bottom: 81px;
         align-items: center;
+        @media screen and (max-width: 1200px){
+            margin-bottom: 30px;
+        }
     }
     &__item-img{
         position: relative;
@@ -34,6 +47,22 @@
             height: 2px;
             left: -349px;
             background: linear-gradient(to right, #1C1C1C 30%, rgba(255, 0, 0, 0.5));
+            @media screen and (max-width: 1200px){
+                width: 60px;
+                left: -60px;
+            }
+        }
+        @media screen and (max-width: 1200px){
+            min-width: 30px;
+            height: 30px;
+        }
+        @media screen and (max-width: 350px){
+            margin-right: 14px;
+        }
+        img{
+            @media screen and (max-width: 1200px){
+                width: 17px;
+            }
         }
     }
     .jfrog-text{
