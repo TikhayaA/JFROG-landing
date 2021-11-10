@@ -68,8 +68,15 @@ input[type=text] {
    -moz-border-radius: 0px;
    border-radius: 0px;
    -webkit-appearance: none;
+   outline: none;
 }
-
+input:not([type=checkbox]):not([type=radio]),
+textarea, 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 input[type=search] {
     -webkit-appearance: none;
     -moz-appearance: none;
