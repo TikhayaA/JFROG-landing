@@ -60,6 +60,11 @@ input[type=search]::-webkit-search-results-decoration {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
 input[type=search] {
     -webkit-appearance: none;
