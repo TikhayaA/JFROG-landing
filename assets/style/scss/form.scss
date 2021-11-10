@@ -70,6 +70,8 @@
         font-size: 20px;
         -webkit-appearance: none;
         border-radius: 0;
+        -webkit-border-radius:0px;
+        outline: none;
         @media screen and (max-width: 767px){
           font-size: 10px;
         }
