@@ -2,11 +2,14 @@
     margin-top: 137px;
     margin-bottom: 223px;
     @media screen and (max-width: 1730px){
-        margin-top: 224px;
+        margin-top: 150px;
         margin-top: 80px;
     }
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 1200px){
         margin-bottom: 80px;
+    }
+    @media screen and (max-width: 450px){
+        margin-bottom: 40px;
     }
     h2{
         margin-bottom: 57px;

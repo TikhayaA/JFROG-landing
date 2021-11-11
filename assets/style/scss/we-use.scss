@@ -6,6 +6,9 @@
     @media screen and (min-width: 1200px) and (max-width: 1400px){
         margin-bottom: 40px;
     }
+    @media screen and (max-width: 500px){
+        margin-bottom: 50px;
+    }
     &__h2{
         margin-bottom: 95px;
         @media screen and (max-width: 1730px){
@@ -22,11 +25,6 @@
         justify-content:space-between;
         @media screen and (max-width: 767px){
             justify-content:center;
-        }
-        :nth-child(1){
-            // @media screen and (max-width: 500px){
-            //     width: 97%;
-            // }
         }
     }
     &__item{

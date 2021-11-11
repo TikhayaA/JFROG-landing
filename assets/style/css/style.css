@@ -403,11 +403,14 @@ h3 {
   margin-bottom: 223px; }
   @media screen and (max-width: 1730px) {
     .benefits {
-      margin-top: 224px;
+      margin-top: 150px;
       margin-top: 80px; } }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1200px) {
     .benefits {
       margin-bottom: 80px; } }
+  @media screen and (max-width: 450px) {
+    .benefits {
+      margin-bottom: 40px; } }
   .benefits h2 {
     margin-bottom: 57px; }
   .benefits__block-wrap {
@@ -912,6 +915,9 @@ h3 {
   @media screen and (min-width: 1200px) and (max-width: 1400px) {
     .we-use {
       margin-bottom: 40px; } }
+  @media screen and (max-width: 500px) {
+    .we-use {
+      margin-bottom: 50px; } }
   .we-use__h2 {
     margin-bottom: 95px; }
     @media screen and (max-width: 1730px) {
@@ -1084,12 +1090,12 @@ h3 {
       .quote-block-left .quote-block__developer {
         width: 150px;
         left: -15px;
-        top: 150px; } }
+        top: 92px; } }
     @media screen and (max-width: 767px) {
       .quote-block-left .quote-block__developer {
-        top: 150px;
+        top: 130px;
         width: 93px;
-        left: -15px; } }
+        left: 0px; } }
 
 .description-content {
   padding: 70px 0 58px;
@@ -1165,6 +1171,9 @@ h3 {
   @media screen and (max-width: 1400px) {
     .interaction {
       margin-bottom: 100px; } }
+  @media screen and (max-width: 1200px) {
+    .interaction {
+      margin-bottom: 50px; } }
   .interaction__h2 {
     margin-bottom: 112px; }
     @media screen and (max-width: 767px) {
@@ -1186,23 +1195,26 @@ h3 {
     @media screen and (max-width: 1200px) {
       .interaction__head {
         min-width: 160px;
-        margin: -16px 20px 0 0; } }
+        margin: 17px -13px 0 0; } }
     @media screen and (max-width: 450px) {
       .interaction__head {
         min-width: 80px;
         margin: 85px 64px 0 0; } }
     @media screen and (max-width: 350px) {
       .interaction__head {
-        margin: 61px 40px 0 0; } }
-    @media screen and (max-width: 319px) {
+        margin: 51px 20px 0 0; } }
+    @media screen and (max-width: 317px) {
       .interaction__head {
         display: none; } }
   @media screen and (max-width: 1200px) {
     .interaction__head-img {
-      width: 150px; } }
+      width: 110px; } }
   @media screen and (max-width: 450px) {
     .interaction__head-img {
       width: 80px; } }
+  @media screen and (max-width: 350px) {
+    .interaction__head-img {
+      width: 70px; } }
   .interaction__list {
     width: 30%; }
     @media screen and (max-width: 1730px) {
@@ -1238,6 +1250,9 @@ h3 {
     @media screen and (max-width: 1200px) {
       .interaction__list-item {
         margin-bottom: 35px; } }
+    @media screen and (max-width: 350px) {
+      .interaction__list-item {
+        margin-bottom: 30px; } }
   .interaction__list-icon {
     position: relative;
     display: flex;
@@ -1301,10 +1316,10 @@ h3 {
       .interaction__head-line-resp {
         display: block;
         position: absolute;
-        top: 28px;
+        top: -4px;
+        right: 18px;
         z-index: 3;
-        width: 55px;
-        right: -22px; } }
+        width: 55px; } }
     @media screen and (max-width: 450px) {
       .interaction__head-line-resp {
         top: -51px;
@@ -1314,7 +1329,7 @@ h3 {
       .interaction__head-line-resp {
         top: -27px;
         width: 56px;
-        right: -34px; } }
+        right: -21px; } }
 
 .customer {
   padding: 70px 0 62px;
@@ -1452,7 +1467,8 @@ h3 {
   position: relative; }
   @media screen and (max-width: 1300px) {
     .important {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: 90px 0 80px; } }
   @media screen and (max-width: 500px) {
     .important {
       padding: 50px 0 150px; } }
@@ -1497,15 +1513,22 @@ h3 {
   .important .quote-block__developer {
     position: absolute;
     top: 117px;
-    left: -206px; }
+    left: -206px;
+    width: 180px; }
+    @media screen and (max-width: 1730px) {
+      .important .quote-block__developer {
+        top: 16px; } }
     @media screen and (max-width: 1300px) {
       .important .quote-block__developer {
         top: 267px;
         left: 25%; } }
     @media screen and (max-width: 500px) {
       .important .quote-block__developer {
-        top: 307px;
+        top: 270px;
         width: 93px; } }
+    @media screen and (max-width: 400px) {
+      .important .quote-block__developer {
+        top: 300px; } }
   .important__content {
     width: 46%;
     position: relative;
@@ -1519,30 +1542,34 @@ h3 {
     @media screen and (max-width: 1300px) {
       .important__content {
         width: 100%;
-        top: 500px;
-        padding-bottom: 370px;
+        top: 400px;
+        padding-bottom: 440px;
         align-items: flex-start; } }
     @media screen and (max-width: 767px) {
       .important__content {
-        top: 330px;
-        padding-bottom: 170px; } }
+        top: 350px;
+        padding-bottom: 230px; } }
+    @media screen and (max-width: 600px) {
+      .important__content {
+        top: 390px; } }
     @media screen and (max-width: 500px) {
       .important__content {
-        top: 280px; } }
+        top: 250px;
+        padding-bottom: 170px; } }
   .important__content-block {
     display: flex;
     flex-direction: column;
     align-items: flex-end; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1200px) {
       .important__content-block :nth-child(2) img {
         width: 18px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1200px) {
       .important__content-block :nth-child(3) img {
         width: 20px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1200px) {
       .important__content-block :nth-child(4) img {
         width: 18px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1200px) {
       .important__content-block :nth-child(5) img {
         width: 15px; } }
   .important .tasks__item {
@@ -1827,7 +1854,8 @@ body {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  display: none; }
+  display: none;
+  cursor: pointer; }
   @media screen and (max-width: 767px) {
     .arrow-up {
       width: 50px; } }
