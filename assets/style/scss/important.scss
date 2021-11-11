@@ -52,7 +52,6 @@
         @media screen and (max-width: 1300px){
             width: 100%;
         }
-        
     }
     .quote-block__developer{
         position: absolute;
@@ -143,4 +142,7 @@
             left: -150px;
         }
     }
+}
+.important__quote-wrap .quote-block__item :nth-child(3){
+    color: rgba(255, 255, 255, 0.8);
 }
