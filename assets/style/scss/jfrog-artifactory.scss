@@ -7,8 +7,23 @@
     @media screen and (max-width: 1200px){
         flex-direction: column-reverse;
     }
+    @media screen and (max-width: 367px){
+        padding-bottom: 73px;
+    }
+    @media screen and (max-width: 350px){
+        padding-bottom: 57px;
+    }
+    @media screen and (max-width: 337px){
+        padding-bottom: 46px;
+    }
+    @media screen and (max-width: 330px){
+        padding-bottom: 59px;
+    }
+    @media screen and (max-width: 321px){
+        padding-bottom: 39px;
+    }
     .description__logo{
-        width: 36%;
+        width: 36.2%;
         margin-top: 50px;
         img{
             width: 100%;

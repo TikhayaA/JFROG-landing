@@ -28,7 +28,7 @@
       width: 120px;
     }
     @media screen and (max-width: 350px){
-      margin-right: 10px;
+      margin-right: 52px;
     }
     img{
       width: 100%;
@@ -47,6 +47,9 @@
     margin: auto;
     width: 710px;
     @media screen and (max-width: 1200px){
+      width: 650px;
+    }
+    @media screen and (max-width: 900px){
       width: 550px;
     }
     @media screen and (max-width: 767px){
@@ -200,7 +203,7 @@
       }
     }
   }
-  &-lines {
+  .form-lines {
     position: absolute;
     top: 0;
     z-index: 0;
@@ -209,7 +212,7 @@
       display: none;
     }
   }
-  &-line {
+  .form-line {
     position: absolute;
     top: -12px;
     left: 117px;
@@ -217,6 +220,17 @@
     pointer-events: none;
     @media screen and (max-width: 1200px){
       display: none;
+    }
+  }
+  .form-line-resp{
+    display: none;
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    z-index: 0;
+    pointer-events: none;
+    @media screen and (max-width: 500px){
+      display: block;
     }
   }
   .file-loaded {

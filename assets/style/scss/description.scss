@@ -12,7 +12,7 @@
         padding: 0px 0 270px;
     }
     @media screen and (max-width: 767px){
-        padding: 60px 0 20px;
+        padding: 55px 0 20px;
     }
     @media screen and (max-width: 367px){
         padding: 20px 0 20px;
@@ -40,18 +40,17 @@
         @media screen and (max-width: 767px){
             width: 23%;
         }
+        @media screen and (max-width: 500px){
+            width: 27%;
+        }
     }
     &__logo-title{
         margin: 48px 0 20px;
         @media screen and (min-width: 768px) and (max-width: 1200px){
             order: 1;
         }
-        @media screen and (max-width: 767px){
-            font-size: 38px;
-        }
         @media screen and (max-width: 500px){
-            font-size: 30px;
-            margin: 20px 0 20px;
+            margin: 38px 0 17px;
         }
         br{
             @media screen and (min-width: 768px) and (max-width: 1200px){
@@ -149,7 +148,7 @@
             }
             @media screen and (max-width: 400px){
                 width: 121px;
-                bottom: -31px;
+                bottom: -21px;
             }
         }
         @media screen and (max-width: 767px){

@@ -4,7 +4,7 @@
         padding-bottom: 130px;
     }
     @media screen and (max-width: 1400px){
-        padding-bottom: 90px;
+        padding-bottom: 82px;
     }
     &__h2{
         margin-bottom: 82px;
@@ -114,8 +114,9 @@
         position: absolute;
         left: 0;
         top: 0;
-        left: -89px;
+        left: -73px;
         top: 3px;
+        z-index: -1;
         @media screen and (max-width: 1200px){
             display: block;
         }

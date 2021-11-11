@@ -1,9 +1,10 @@
 .quote{
-    padding: 28px 31px 14px 32px;
+    // padding: 28px 31px 14px 32px;
     border-radius: 12px;
     position: relative;
     background-color: #272727;
     box-sizing: border-box;
+    padding: 28px 34px 2px 34px;
     @media screen and (max-width: 1730px){
         padding: 28px 18px 14px 18px;
     }
@@ -11,6 +12,7 @@
         padding: 13px 14px 14px 14px;
     }
     .jfrog-text{
+        color: $colormain;
         @media screen and (max-width: 1730px){
             font-size: 16px;
         }
