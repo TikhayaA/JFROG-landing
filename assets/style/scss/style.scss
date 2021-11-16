@@ -50,20 +50,25 @@ body{
 .line-bg-resp{
     position: absolute;
     left: -25px;
-    top: 91%;
+    top: 82%;
     z-index: 0;
     pointer-events: none;
     display: none;
     @media screen and (max-width: 380px){
         display: block;
     }
+    @media screen and (max-width: 368px){
+        top: 86%;
+     }
+     @media screen and (max-width: 367px){
+        top: 85%;
+     }
     @media screen and (max-width: 350px){
        width: 305px;
-       top: 92%;
+       top: 88%;
     }
     @media screen and (max-width: 330px){
-        width: 305px;
-        top: 97%;
+        top: 92%;
      }
      @media screen and (max-width: 315px){
         display: none;

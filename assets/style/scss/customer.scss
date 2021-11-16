@@ -2,6 +2,9 @@
     padding: 70px 0 62px;
     margin-bottom: 153px;
     background: #272727;
+    @media screen and (max-width: 1200px){
+        margin-bottom: 100px;
+    }
     @media screen and (max-width: 600px){
         margin-bottom: 50px;
         padding: 70px 0 50px;

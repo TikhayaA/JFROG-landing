@@ -160,6 +160,9 @@
                         @media screen and (max-width: 370px){
                             top: -141%;
                         }
+                        @media screen and (max-width: 306px){
+                            top: -56%;
+                        }
                     }
                 }
             }
@@ -200,6 +203,9 @@
             }
             @media screen and (max-width: 767px){
                 height: 66%;
+            }
+            @media screen and (max-width: 306px){
+                height: 69%;
             }
         }
     }

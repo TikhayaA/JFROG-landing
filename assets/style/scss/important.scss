@@ -49,6 +49,9 @@
                 -ms-transform: rotate(-120deg);
                 -o-transform: rotate(-120deg);
                 }
+            @media screen and (max-width: 283px){
+                left: 71%;
+            }
         }
         @media screen and (max-width: 1300px){
             width: 100%;
@@ -73,6 +76,9 @@
         @media screen and (max-width: 400px){
             top: 300px;
         }
+        @media screen and (max-width: 296px){
+            top: 315px;
+        }
     }
     &__content{
         width: 46%;
@@ -92,10 +98,11 @@
         }
         @media screen and (max-width: 767px){
             top: 350px;
-            padding-bottom: 230px;
+            padding-bottom: 300px;
         }
         @media screen and (max-width: 600px){
             top: 390px;
+            padding-bottom: 350px;
         }
         @media screen and (max-width: 500px){
             top: 250px;

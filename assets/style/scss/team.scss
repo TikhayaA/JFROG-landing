@@ -6,6 +6,9 @@
     @media screen and (max-width: 1400px){
         padding-bottom: 82px;
     }
+    @media screen and (max-width: 400px){
+        padding-bottom: 60px;
+    }
     &__h2{
         margin-bottom: 82px;
         position: relative;
@@ -76,6 +79,10 @@
             padding: 9px 30px;
             margin-bottom: 20px;
             border: 1px solid rgba(237, 28, 36, 0.5);
+        }
+        @media screen and (max-width: 320px){
+            font-size: 12px;
+            margin-bottom: 23px;
         }
         &:after{
             position: absolute;

@@ -34,8 +34,17 @@
             width: 133px;
             right: -20px;
         }
+        @media screen and (max-width: 400px){
+            top: 170px;
+        }
         @media screen and (max-width: 335px){
             top: 182px;
+        }
+        @media screen and (max-width: 294px){
+            top: 200px;
+        }
+        @media screen and (max-width: 290px){
+            top: 240px;
         }
     }
     
@@ -93,6 +102,9 @@
             top: 130px;
             width: 93px;
             left: 0px;
+        }
+        @media screen and (max-width: 297px){
+            top: 160px;
         }
     }
 }

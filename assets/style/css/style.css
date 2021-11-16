@@ -291,7 +291,7 @@ h3 {
       .header-menu__get-in-touch {
         padding-left: 0px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .selection-stages {
     overflow: hidden; } }
 .selection-stages h2 {
@@ -329,6 +329,14 @@ h3 {
   @media screen and (max-width: 350px) {
     .selection-stages__wrap {
       width: 300px; } }
+  @media screen and (max-width: 319px) {
+    .selection-stages__wrap {
+      width: 270px;
+      position: relative;
+      left: -10px; } }
+  @media screen and (max-width: 290px) {
+    .selection-stages__wrap {
+      width: 260px; } }
   .selection-stages__wrap > :last-child {
     width: 15%; }
     @media screen and (max-width: 1200px) {
@@ -347,6 +355,12 @@ h3 {
     .selection-stages__step-number {
       margin-left: 11px;
       font-size: 12px; } }
+  @media screen and (max-width: 330px) {
+    .selection-stages__step-number {
+      margin-top: 10px; } }
+  @media screen and (max-width: 290px) {
+    .selection-stages__step-number {
+      margin-top: 7px; } }
 .selection-stages__step-icon {
   background-image: url("../../svg/pattern.svg");
   margin: 15px 0 17px;
@@ -360,6 +374,9 @@ h3 {
       background-image: none;
       margin: 7px 0 13px;
       width: 29px; } }
+  @media screen and (max-width: 330px) {
+    .selection-stages__step-icon {
+      margin: 5px 0 5px; } }
 .selection-stages__line-img {
   position: absolute;
   top: 53px;
@@ -389,6 +406,18 @@ h3 {
         top: 35px;
         left: -1px;
         width: 282px; } }
+    @media screen and (max-width: 360px) {
+      .selection-stages__line-img .line-resp {
+        width: 281px; } }
+    @media screen and (max-width: 339px) {
+      .selection-stages__line-img .line-resp {
+        width: 270px; } }
+    @media screen and (max-width: 330px) {
+      .selection-stages__line-img .line-resp {
+        width: 250px; } }
+    @media screen and (max-width: 290px) {
+      .selection-stages__line-img .line-resp {
+        top: 47px; } }
 .selection-stages .jfrog-text {
   text-align: center; }
   @media screen and (max-width: 1200px) {
@@ -397,6 +426,9 @@ h3 {
   @media screen and (max-width: 767px) {
     .selection-stages .jfrog-text {
       text-align: left; } }
+  @media screen and (max-width: 330px) {
+    .selection-stages .jfrog-text {
+      font-size: 11px; } }
 
 .benefits {
   margin-top: 137px;
@@ -527,6 +559,9 @@ h3 {
       @media screen and (max-width: 370px) {
         .benefits__wrap .benefits__block-wrap-last-col .benefits__list:last-child:after {
           top: -141%; } }
+      @media screen and (max-width: 306px) {
+        .benefits__wrap .benefits__block-wrap-last-col .benefits__list:last-child:after {
+          top: -56%; } }
   .benefits__block {
     width: 29%;
     display: flex;
@@ -558,6 +593,9 @@ h3 {
   @media screen and (max-width: 767px) {
     .benefits__block-wrap-last-col:after {
       height: 66%; } }
+  @media screen and (max-width: 306px) {
+    .benefits__block-wrap-last-col:after {
+      height: 69%; } }
   .benefits__block-icon {
     min-width: 56px;
     height: 56px;
@@ -769,12 +807,12 @@ h3 {
       padding-bottom: 39px; } }
   .jfrog-artifactory .description__logo {
     width: 36.2%;
-    margin-top: 50px; }
+    align-self: center; }
     .jfrog-artifactory .description__logo img {
       width: 100%; }
     @media screen and (max-width: 1200px) {
       .jfrog-artifactory .description__logo {
-        align-self: center; } }
+        margin-top: 40px; } }
     @media screen and (max-width: 600px) {
       .jfrog-artifactory .description__logo {
         width: 89%; } }
@@ -785,6 +823,8 @@ h3 {
       .jfrog-artifactory__content {
         position: static;
         width: 100%; } }
+    .jfrog-artifactory__content :last-child {
+      margin: 0; }
   .jfrog-artifactory__content-h2 {
     margin-bottom: 29px; }
     @media screen and (max-width: 767px) {
@@ -801,6 +841,9 @@ h3 {
   @media screen and (max-width: 1400px) {
     .team {
       padding-bottom: 82px; } }
+  @media screen and (max-width: 400px) {
+    .team {
+      padding-bottom: 60px; } }
   .team__h2 {
     margin-bottom: 82px;
     position: relative; }
@@ -868,6 +911,10 @@ h3 {
         padding: 9px 30px;
         margin-bottom: 20px;
         border: 1px solid rgba(237, 28, 36, 0.5); } }
+    @media screen and (max-width: 320px) {
+      .team__item {
+        font-size: 12px;
+        margin-bottom: 23px; } }
     .team__item:after {
       position: absolute;
       content: "";
@@ -911,8 +958,11 @@ h3 {
   margin-bottom: 117px; }
   @media screen and (max-width: 1730px) {
     .we-use {
-      margin-bottom: 90px; } }
-  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+      margin-bottom: 120px; } }
+  @media screen and (max-width: 1400px) {
+    .we-use {
+      margin-bottom: 70px; } }
+  @media screen and (max-width: 1200px) {
     .we-use {
       margin-bottom: 40px; } }
   @media screen and (max-width: 500px) {
@@ -1040,9 +1090,18 @@ h3 {
         top: 148px;
         width: 133px;
         right: -20px; } }
+    @media screen and (max-width: 400px) {
+      .quote-block__developer {
+        top: 170px; } }
     @media screen and (max-width: 335px) {
       .quote-block__developer {
         top: 182px; } }
+    @media screen and (max-width: 294px) {
+      .quote-block__developer {
+        top: 200px; } }
+    @media screen and (max-width: 290px) {
+      .quote-block__developer {
+        top: 240px; } }
 
 .quote-block-left {
   display: flex;
@@ -1096,6 +1155,9 @@ h3 {
         top: 130px;
         width: 93px;
         left: 0px; } }
+    @media screen and (max-width: 297px) {
+      .quote-block-left .quote-block__developer {
+        top: 160px; } }
 
 .description-content {
   padding: 70px 0 58px;
@@ -1335,6 +1397,9 @@ h3 {
   padding: 70px 0 62px;
   margin-bottom: 153px;
   background: #272727; }
+  @media screen and (max-width: 1200px) {
+    .customer {
+      margin-bottom: 100px; } }
   @media screen and (max-width: 600px) {
     .customer {
       margin-bottom: 50px;
@@ -1507,6 +1572,9 @@ h3 {
           -moz-transform: rotate(-120deg);
           -ms-transform: rotate(-120deg);
           -o-transform: rotate(-120deg); } }
+      @media screen and (max-width: 283px) {
+        .important .quote-block__item:after {
+          left: 71%; } }
     @media screen and (max-width: 1300px) {
       .important .quote-block__item {
         width: 100%; } }
@@ -1529,6 +1597,9 @@ h3 {
     @media screen and (max-width: 400px) {
       .important .quote-block__developer {
         top: 300px; } }
+    @media screen and (max-width: 296px) {
+      .important .quote-block__developer {
+        top: 315px; } }
   .important__content {
     width: 46%;
     position: relative;
@@ -1548,10 +1619,11 @@ h3 {
     @media screen and (max-width: 767px) {
       .important__content {
         top: 350px;
-        padding-bottom: 230px; } }
+        padding-bottom: 300px; } }
     @media screen and (max-width: 600px) {
       .important__content {
-        top: 390px; } }
+        top: 390px;
+        padding-bottom: 350px; } }
     @media screen and (max-width: 500px) {
       .important__content {
         top: 250px;
@@ -1796,6 +1868,12 @@ h3 {
     @media screen and (max-width: 500px) {
       .form .form-line-resp {
         display: block; } }
+    @media screen and (max-width: 319px) {
+      .form .form-line-resp {
+        width: 280px; } }
+    @media screen and (max-width: 290px) {
+      .form .form-line-resp {
+        width: 265px; } }
   .form .file-loaded {
     width: 24px;
     height: 24px; }
@@ -1831,21 +1909,26 @@ body {
 .line-bg-resp {
   position: absolute;
   left: -25px;
-  top: 91%;
+  top: 82%;
   z-index: 0;
   pointer-events: none;
   display: none; }
   @media screen and (max-width: 380px) {
     .line-bg-resp {
       display: block; } }
+  @media screen and (max-width: 368px) {
+    .line-bg-resp {
+      top: 86%; } }
+  @media screen and (max-width: 367px) {
+    .line-bg-resp {
+      top: 85%; } }
   @media screen and (max-width: 350px) {
     .line-bg-resp {
       width: 305px;
-      top: 92%; } }
+      top: 88%; } }
   @media screen and (max-width: 330px) {
     .line-bg-resp {
-      width: 305px;
-      top: 97%; } }
+      top: 92%; } }
   @media screen and (max-width: 315px) {
     .line-bg-resp {
       display: none; } }

@@ -24,12 +24,12 @@
     }
     .description__logo{
         width: 36.2%;
-        margin-top: 50px;
+        align-self: center;
         img{
             width: 100%;
         }
         @media screen and (max-width: 1200px){
-            align-self: center;
+            margin-top: 40px;
         }
         @media screen and (max-width: 600px){
             width: 89%;
@@ -41,6 +41,9 @@
         @media screen and (max-width: 1200px){
             position: static;
             width: 100%;
+        }
+        :last-child{
+            margin: 0;
         }
     }
     &__content-h2{
