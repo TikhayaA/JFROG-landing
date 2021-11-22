@@ -889,7 +889,7 @@ h3 {
       .team__wrap {
         width: 79%; } }
   .team__item {
-    background: rgba(28, 28, 28, 0.1);
+    background: #1c1c1c;
     border: 1px solid #ED1C24;
     box-sizing: border-box;
     backdrop-filter: blur(50px);
