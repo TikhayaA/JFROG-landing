@@ -25,7 +25,9 @@ window.addEventListener('scroll', () => {
         goTopBtn.classList.remove('arrow-up_show');
     }
     if (window.innerWidth < 767) {
-        if (window.pageYOffset > form[0].offsetTop - 360) {
+        console.log(form[0].offsetTop)
+        console.log(window.pageYOffset)
+        if (window.pageYOffset > form[0].offsetTop - 1000) {
             goTopBtn.classList.add('arrow-up_mobile');
         } else {
             goTopBtn.classList.remove('arrow-up_mobile');

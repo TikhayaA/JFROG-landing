@@ -1018,9 +1018,8 @@ h3 {
     @media screen and (max-width: 500px) {
       .we-use__item-icon {
         margin-right: 37px; } }
-    @media screen and (max-width: 1200px) {
-      .we-use__item-icon img {
-        width: 100%; } }
+    .we-use__item-icon img {
+      width: 100%; }
   .we-use .jfrog-text {
     align-self: center;
     color: #F1F1F1; }
@@ -1945,7 +1944,7 @@ body {
   .arrow-up_show {
     display: block; }
   .arrow-up_mobile {
-    bottom: 743px;
+    bottom: 564px;
     position: absolute;
     z-index: 1;
     right: 23px; }
@@ -1959,6 +1958,9 @@ body {
   @media screen and (max-width: 1730px) {
     .pos-icon-1 {
       right: -12%; } }
+  @media screen and (max-width: 1400px) {
+    .pos-icon-1 {
+      right: -5%; } }
   @media screen and (max-width: 1200px) {
     .pos-icon-1 {
       top: 73.5%;
@@ -1978,6 +1980,9 @@ body {
   @media screen and (max-width: 1730px) {
     .pos-icon-2 {
       right: -11%; } }
+  @media screen and (max-width: 1400px) {
+    .pos-icon-2 {
+      right: -1%; } }
   @media screen and (max-width: 1200px) {
     .pos-icon-2 {
       top: 87.6%;
